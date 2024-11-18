@@ -121,26 +121,46 @@ nav ul li {
 /* Projects Section */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Fleksibel untuk ukuran kolom */
+  gap: 20px; /* Jarak antar elemen grid */
+  margin-top: 20px; /* Jarak atas dari judul */
 }
 
 .project {
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  text-align: center;
+  background-color: #fff; /* Latar belakang putih */
+  padding: 20px; /* Spasi di dalam setiap elemen */
+  border: 1px solid #ddd; /* Batas abu-abu */
+  border-radius: 5px; /* Sudut melengkung */
+  text-align: center; /* Teks rata tengah */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan */
 }
 
 .project h3 {
   margin-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Ukuran font besar */
+  color: #333; /* Warna teks utama */
 }
 
 .project p {
+  font-size: 1rem; /* Ukuran font deskripsi */
+  color: #666; /* Warna teks deskripsi */
+}
+
+.project .button {
+  background-color: #4caf50; /* Warna hijau */
+  color: white;
+  border: none;
+  padding: 10px 20px;
   font-size: 1rem;
-  color: #666;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project .button:hover {
+  background-color: #45a049; /* Warna hijau gelap saat hover */
 }
 
 /* Contact Section */
